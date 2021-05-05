@@ -1,0 +1,20 @@
+programa {
+    inteiro primeiroNumero
+    inteiro segundoNumero
+    inteiro sequencia
+    inteiro fibonacci
+    
+	funcao inicio() {
+	    escreva ("Sequência de fibonacci!")
+	    primeiroNumero = 0
+	    segundoNumero = 1
+	    
+	    para (fibonacci = 0; fibonacci <= 13; fibonacci ++)
+	    sequencia = primeiroNumero + segundoNumero
+	    primeiroNumero = segundoNumero
+	    segundoNumero= sequencia
+	    
+	    escreva ("A Sequência de fibonacci é: " + sequencia)
+		
+	}
+}

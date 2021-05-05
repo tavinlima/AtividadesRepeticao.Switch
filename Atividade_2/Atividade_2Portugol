@@ -1,0 +1,23 @@
+programa {
+    logico senhaValida
+    caracter nomeUsuario
+    caracter senha
+    
+	funcao inicio("algoritmo senha/=usuario") {
+            escreva ("Insira seu nome de usuário: ")
+	        leia (nomeUsuario)
+            faca
+            {
+	        escreva ("Insira sua senha: ")
+	        leia (senha)
+	        
+	        se (senha == nomeUsuario){
+	        escreva ("\n ERRO! Insira uma senha válida diferente do seu nome de usuário." + "\n")
+	        } 
+	        senao {
+	            escreva("Cadastro completo! Tenha um ótimo dia :)")
+	            senhaValida = verdadeiro
+	        }
+            } enquanto (senhaValida == falso)
+	        }
+	}

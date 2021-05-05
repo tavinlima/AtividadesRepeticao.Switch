@@ -1,0 +1,21 @@
+programa {
+    inteiro nota
+    logico notaCorreta
+    
+	funcao inicio("algoritmo insira uma nota") {
+	    notaCorreta = falso
+	    enquanto (notaCorreta == falso){
+	        escreva ("Insira uma nota de 0 a 10: ")
+	        leia (nota)
+	        
+	        se(nota >= 0 e nota <= 10){
+	            escreva ("Número válido!")
+	            notaCorreta = verdadeiro
+	        } 
+	        senao{
+	            escreva ("Por favor, insira um número válido")
+	        }
+	    }
+		
+	}
+}

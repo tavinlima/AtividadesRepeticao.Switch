@@ -1,0 +1,86 @@
+programa {
+    caracter nome
+    logico nomeValido
+    inteiro idade
+    logico idadeValido
+    real salario
+    logico salarioValido
+    cadeia estadoCivil
+    logico estadoCivilValido
+    
+	funcao inicio("verificação de dados") {
+		    logico nomeValido = falso
+            logico idadeValida = falso
+            logico salarioValido = falso
+            logico estadoCivilValido = falso
+
+            escreva("Insira seu nome: ")
+            leia (nome)
+            faca
+            {
+                se (nome! == " "){
+                escreva("Insira seu NOME: ")
+                leia (nome)
+            } senao{
+                nomeValido = verdadeiro
+            }
+
+            }enquanto (nomeValido == falso)
+
+            faca
+            {
+            escreva("Insira sua idade: ")
+            leia (idade)
+
+            se(idade > 0 e idade <= 150){
+                idadeValida = verdadeiro
+            } senao{
+                idadeValida = falso
+            }    
+
+            } enquanto (idadeValida == falso)
+
+            faca
+            {
+            escreva ("Insira o valor da sua média salarial: ")
+            leia (salario)
+
+            se(salario > 0){
+                salarioValido = verdadeiro
+            } senao{
+                escreva ("Valor inválido." + "\n")
+            }
+                
+            } enquanto (salarioValido == falso)
+
+            faca
+            {
+            escreva("Insira seu estado civil: ")
+            escreva("s para solteiro(a), c para casado(a), v para víuvo(a) ou d para divorciado(a)")
+            leia (estadoCivil)
+
+            escolha (estadoCivil)
+            {
+                caso "s":
+                escreva ("\n Operação finalizada, tenha um ótimo dia! :)" + "\n")
+                estadoCivilValido = verdadeiro
+                    interrompa
+                caso "c":
+                escreva ("\n Operação finalizada, tenha um ótimo dia! :)" + "\n")
+                estadoCivilValido = verdadeiro
+                    interrompa
+                caso "v":
+                escreva ("\n Operação finalizada, tenha um ótimo dia! :)" + "\n")
+                estadoCivilValido = verdadeiro
+                    interrompa
+                caso "d":
+                escreva ("\n Operação finalizada, tenha um ótimo dia! :)" + "\n")
+                estadoCivilValido = verdadeiro
+                    interrompa
+                outrocaso
+                escreva ("Valor inválido." +"\n")
+                fimescolha
+            }
+	        }enquanto(estadoCivilValido == falso)
+}
+}
